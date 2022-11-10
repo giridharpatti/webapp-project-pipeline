@@ -3,7 +3,7 @@ pipeline {
     label 'slave1'
   }
   environment{
-     CODEDIR='/var/lib/jenkins/workspace/webapp-build-pipeline/webapp-project-pipeline"
+     CODEDIR='/var/lib/jenkins/workspace/webapp-build-pipeline/webapp-project-pipeline'
     }
   stages {
      stage('clone repo') {
