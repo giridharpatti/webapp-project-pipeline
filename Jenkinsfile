@@ -28,7 +28,7 @@ pipeline {
         dir("${env.CODEDIR}") {
         echo 'Building the code with maven'
         sh '''
-        aws s3 cp /target/mywebapp-"${BUILD_NUMBER}".war s3://mywebapp-code/mywebapp-"${BUILD_NUMBER}".war
+        aws s3 cp /var/lib/jenkins/workspace/webapp-build-pipeline/webapp-project-pipeline/target/mywebapp-"${BUILD_NUMBER}".war s3://mywebapp-code/mywebapp-"${BUILD_NUMBER}".war
         '''
         }
       }
