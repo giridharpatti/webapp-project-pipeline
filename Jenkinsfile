@@ -1,4 +1,5 @@
-  agent {
+pipeline {  
+agent {
     label 'slave1'
   }
   environment{
